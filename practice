@@ -1,0 +1,14 @@
+---
+pool: "my pool"
+
+trigger:
+  - efficient-webjars
+
+stages:
+  - stage: Build
+    displayname: ci
+    jobs:
+      - job: build job
+        steps:
+          - script: echo Hello world!
+            
